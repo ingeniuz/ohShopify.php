@@ -1,4 +1,7 @@
 <?php
+namespace ingeniuz\ohshopify;
+
+
 class ShopifyClient {
 	public $shop_domain;
 	private $token;
