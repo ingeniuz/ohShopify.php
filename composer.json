@@ -1,0 +1,21 @@
+{
+	"name": "ingeniuz/ohshopify",
+	"type": "library",
+	"description": "Simple Shopify API client in PHP",
+	"keywords": ["shopify","api"],
+	"homepage": "https://github.com/ingeniuz/shopify",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Sandeep Shetty",
+			"email": "sandeep.shetty@gmail.com",
+			"homepage": "http://sandeep.shetty.in"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0"
+	},
+	"autoload": {
+		"files": ["shopify.php"]
+	}
+}
