@@ -3,7 +3,7 @@
 	"type": "library",
 	"description": "Simple Shopify API client in PHP",
 	"keywords": ["shopify","api"],
-	"homepage": "https://github.com/ingeniuz/shopify",
+	"homepage": "https://github.com/ingeniuz/ohshopify",
 	"license": "MIT",
 	"authors": [
 		{
