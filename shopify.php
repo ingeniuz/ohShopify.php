@@ -39,6 +39,8 @@ class ShopifyClient {
 		$payload = "client_id={$this->api_key}&client_secret={$this->secret}&code=$code";
 		$response = $this->curlHttpApiRequest('POST', $url, '', $payload, array());
 		$response = json_decode($response, true);
+		if (isset($response['errors']) or ($this->last_response_headers['http_status_code'] >= 400))
+			throw new ShopifyApiException($method, $path, $params, $this->last_response_headers, $response);
 		/* if (isset($response['access_token'])) {
 			return $response['access_token'];
 		}*/
