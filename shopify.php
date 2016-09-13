@@ -21,6 +21,13 @@ class ShopifyClient {
 	{
 		return $this->last_response_headers;
 	}
+	
+	// Method to set the token
+	public function setToken($token)
+	{
+		$this->token = $token;
+		return $this;
+	}
 
 	// Get the URL required to request authorization
 	public function getAuthorizeUrl($scope, $redirect_url='') {
