@@ -15,6 +15,12 @@ class ShopifyClient {
 		$this->api_key = $api_key;
 		$this->secret = $secret;
 	}
+	
+	// Get last response headers (for debugging)
+	public function getLastResponseHeaders()
+	{
+		return $this->last_response_headers;
+	}
 
 	// Get the URL required to request authorization
 	public function getAuthorizeUrl($scope, $redirect_url='') {
